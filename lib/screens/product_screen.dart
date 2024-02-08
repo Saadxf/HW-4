@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hw4/screens/cart_screen.dart';
 
 class ProductScreen extends StatefulWidget {
   final String imagePath;
@@ -27,7 +28,14 @@ class _ProductScreenState extends State<ProductScreen> {
       appBar: AppBar(
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const CartScreen(),
+                ),
+              );
+            },
             icon: const Icon(Icons.shopping_cart_outlined),
           ),
         ],
