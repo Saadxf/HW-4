@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
             ),
             ContainerWidget(
               imagePath: 'media/apple_watch.jpg',
-              price: '300 SR',
+              price: '1400 SR',
               description: 'apple watch pro',
               brand: 'apple',
             ),

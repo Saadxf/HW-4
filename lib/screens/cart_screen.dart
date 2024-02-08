@@ -55,6 +55,14 @@ class _CartScreenState extends State<CartScreen> {
                         ),
                       ),
                       const SizedBox(width: 10),
+                      const Text(
+                        "1x",
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.white,
+    
+                        ),
+                      ),
                       Text(
                         product.name,
                         style: const TextStyle(
@@ -66,7 +74,8 @@ class _CartScreenState extends State<CartScreen> {
                       const SizedBox(width: 10),
                       Text(
                         'Price: ${product.price} SR',
-                        style: const TextStyle(color: Colors.white, fontSize: 16),
+                        style:
+                            const TextStyle(color: Colors.white, fontSize: 16),
                       ),
                     ],
                   ),
@@ -75,7 +84,8 @@ class _CartScreenState extends State<CartScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
